@@ -1,4 +1,19 @@
-# In order to analyse one simulation
+# Analyse one simulation
+
+%matplotlib inline
+import numpy as np
+from vtk import vtkStructuredPointsReader
+from vtk.util import numpy_support as VN
+import vtk
+import matplotlib.pyplot as plt
+import matplotlib.colors
+from matplotlib.colors import LogNorm
+import os, os.path
+import time
+from sklearn.metrics import mean_squared_error
+import math
+import fileinput
+from scipy import ndimage
 
 input_directory = 'Wind_cloud/Wind-Cloud-MHD-Al/'
 
