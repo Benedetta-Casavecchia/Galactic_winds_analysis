@@ -82,14 +82,6 @@ def diagnostics_cgs(rho, vx1, vx2, vx3, Bx1, Bx2, Bx3, prs, tr1, name_file, inpu
      
     mix_numerator = np.sum(mass_cell[np.where((tr1<0.99) & (tr1>0.01))]*tr1[np.where((tr1<0.99) & (tr1>0.01))])
     
-    ## CREATE HISTOGRAM FOR THE TEMPERATURE
-    
-    #hist_T, bins_T = np.histogram(log_Temp, bins = 20, range = (-3.6, 1.5))
-    
-    #center = (bins_T[:-1] + bins_T[1:]) / 2
-    #width = 0.8*(bins_T[1] - bins_T[0])
-    #plt.bar(center, hist_T, align = 'center', alpha = 0.6, width = width)
-    
     ## HISTOGRAM 3D n, T and mass (CLOUD)
     
     average_Temp    = np.average(Temp, weights = rho_cloud)
