@@ -107,6 +107,3 @@ def diagnostics_cgs(rho, vx1, vx2, vx3, Bx1, Bx2, Bx3, prs, tr1, name_file, inpu
     
     return average_rho_cl, n_cloud_average, mass_cloud_tot, mean_wind_vel, average_Temp, Temp, CM[0], CM[1], CM[2], \
 eff_radius_x, eff_radius_y, eff_radius_z, mix_numerator, n_cloud1D, mass_cloud
-
-#diagnostics_cgs('data.0000.vtk', 'Wind_cloud/Wind-Cloud-MHD-Al/', 10**7, 3.086*10**19, 1.115*10**(-26), 0.67, 5/3)
-#diagnostics_cgs('data.0000.vtk', 'Wind_cloud_turb/Wind-Cloud-MHD2AlTurb/', 10**7, 3.086*10**19, 1.115*10**(-26), 0.67, 5/3)
